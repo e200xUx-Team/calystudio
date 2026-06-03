@@ -10,12 +10,7 @@
  *  - All data routes protected: must be logged in + approved
  */
 // Force Vercel to bundle the sql.js WebAssembly file
-try {
-  const fs = require('fs');
-  const path = require('path');
-  fs.readFileSync(path.join(process.cwd(), 'node_modules/sql.js/dist/sql-wasm.wasm'));
-} catch (e) {}
-'use strict';
+require.resolve('sql.js/dist/sql-wasm.wasm');
 
 const express = require('express');
 const cookieParser = require('cookie-parser');
