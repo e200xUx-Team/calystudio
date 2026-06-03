@@ -1,0 +1,21 @@
+# Dependencies — never commit these
+node_modules/
+
+# Database (runtime data)
+db/studio.db
+*.db
+
+# Environment secrets
+.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
