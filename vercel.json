@@ -1,1 +1,7 @@
-
+{
+  "functions": {
+    "**/*": {
+      "includeFiles": "node_modules/sql.js/**/*.wasm"
+    }
+  }
+}
